@@ -35,9 +35,9 @@ namespace Solitaire
             return timer;
         }
 
-        void GetMoveCount()
+        int GetMoveCount()             //подсчет количества ходов
         {
-            //подсчет количества ходов
+            return move;
         }
     }
 
