@@ -30,9 +30,9 @@ namespace Solitaire
             return score;
         }
         
-        void GetGameTime()
+        Timer GetGameTime() //подсчет времени игры
         {
-            //подсчет времени игры
+            return timer;
         }
 
         void GetMoveCount()
