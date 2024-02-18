@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,9 +25,9 @@ namespace Solitaire
         {
             //раздача (случайное заполнение deck)
         }
-        void GetScorePoints()
+        int GetScorePoints() //подсчет очков
         {
-            //подсчет очков
+            return score;
         }
         
         void GetGameTime()
