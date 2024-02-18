@@ -17,5 +17,15 @@ namespace SolitaireDB
         {
             //регистрация
         }
+
+        void Auth()
+        {
+            //авторизация
+        }
+
+        void Recovery()
+        {
+            //восстановление
+        }
     }
 }
