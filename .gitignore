@@ -10,3 +10,7 @@
 /.vs/SolitaireOnline/FileContentIndex
 /program/SolitaireDB/.vs/SolitaireDB/FileContentIndex/42f09337-c662-4207-bfb5-dd1764650c71.vsidx
 /program/SolitaireDB/.vs/SolitaireDB/v17/.suo
+*.vsidx
+/program/SolitaireDB/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/program/SolitaireDB/obj/Debug/SolitaireDB.csproj.AssemblyReference.cache
+/program/SolitaireDB/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
