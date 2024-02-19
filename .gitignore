@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SolitaireOnline/FileContentIndex/32e993a9-465b-490c-ab82-36078842adf9.vsidx
+/.vs/SolitaireOnline/FileContentIndex/e0d53d68-7c3a-4229-988c-403e4351ea0f.vsidx
+/.vs/SolitaireOnline/v17/.wsuo
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json
+/program/Solitaire/.vs/Solitaire/FileContentIndex
+/program/SolitaireClient/.vs/ProjectEvaluation
+/program/SolitaireClient/.vs/SolitaireClient/DesignTimeBuild
+/program/SolitaireClient/.vs/SolitaireClient/FileContentIndex
+/program/SolitaireClient/.vs/SolitaireClient/v17
+/program/SolitaireDB/.vs/SolitaireDB/FileContentIndex
+/program/SolitaireDB/.vs/SolitaireDB/v17/.suo
+/program/SolitaireDB/obj/Debug
+/program/SolitaireClient/obj
