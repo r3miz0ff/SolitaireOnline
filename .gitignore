@@ -46,3 +46,31 @@
 /program/SolitaireDB/obj/Debug/SolitaireDB.csproj.AssemblyReference.cache
 /program/SolitaireDB/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
 >>>>>>> database
+||||||| d833bed
+=======
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/program/SolitaireDB/obj/Debug/SolitaireDB.csproj.AssemblyReference.cache
+/program/SolitaireDB/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/program/SolitaireDB/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+/program/SolitaireDB/.vs/SolitaireDB/v17/.suo
+/program/SolitaireDB/.vs/SolitaireDB/FileContentIndex/e1634781-0fdc-4288-a593-8584885bfddb.vsidx
+/program/SolitaireDB/.vs/SolitaireDB/FileContentIndex/b43adc9b-071b-4c97-99af-f8f825677fd1.vsidx
+/program/SolitaireDB/.vs/SolitaireDB/FileContentIndex/42f09337-c662-4207-bfb5-dd1764650c71.vsidx
+/program/Solitaire/.vs/Solitaire/FileContentIndex/f0f1aad1-75da-415b-ab3e-0d6a43cbae39.vsidx
+/program/Solitaire/.vs/Solitaire/FileContentIndex/4fbc0db3-850f-42f9-80b2-62f561cd0ad7.vsidx
+/program/Solitaire/.vs/Solitaire/FileContentIndex/44abd407-725e-459c-8f61-319c6b986045.vsidx
+/program/Solitaire/.vs/Solitaire/FileContentIndex/0c2e7fe9-3a1a-45f9-b5d7-285377c53574.vsidx
+/program/Solitaire/.vs/Solitaire/FileContentIndex/36846fd2-6b8e-4631-9f4d-80541ed081e1.vsidx
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/SolitaireOnline/v17/.wsuo
+/.vs/SolitaireOnline/FileContentIndex/e0d53d68-7c3a-4229-988c-403e4351ea0f.vsidx
+/.vs/SolitaireOnline/FileContentIndex/32e993a9-465b-490c-ab82-36078842adf9.vsidx
+/program/SolitaireClient/.vs/SolitaireClient/FileContentIndex/7123760f-7826-4fa4-bc52-b5ba9a60144c.vsidx
+/program/SolitaireClient/.vs/SolitaireClient/FileContentIndex/173e9b95-1b3c-40f7-94cb-257d750486c5.vsidx
+/program/SolitaireClient/.vs/SolitaireClient/v17/.suo
+>>>>>>> client
