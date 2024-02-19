@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -17,3 +17,12 @@
 /program/SolitaireDB/.vs/SolitaireDB/v17/.suo
 /program/SolitaireDB/obj/Debug
 /program/SolitaireClient/obj
+||||||| d833bed
+=======
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SolitaireOnline/FileContentIndex
+/program/Solitaire/.vs/Solitaire/FileContentIndex
+>>>>>>> solitaire
