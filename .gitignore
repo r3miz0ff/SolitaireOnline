@@ -74,3 +74,10 @@
 /program/SolitaireClient/.vs/SolitaireClient/FileContentIndex/173e9b95-1b3c-40f7-94cb-257d750486c5.vsidx
 /program/SolitaireClient/.vs/SolitaireClient/v17/.suo
 >>>>>>> client
+/.gitignore.orig
+/program/SolitaireDB/obj/Release/SolitaireDB.csproj.AssemblyReference.cache
+/program/SolitaireDB/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+/program/Solitaire/obj/Release/Solitaire.csproj.AssemblyReference.cache
+/program/Solitaire/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+/program/Solitaire/obj/Debug/Solitaire.csproj.AssemblyReference.cache
+/program/Solitaire/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
