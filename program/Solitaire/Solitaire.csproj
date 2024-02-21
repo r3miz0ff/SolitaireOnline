@@ -47,5 +47,8 @@
     <Compile Include="Solitaire.cs" />
     <Compile Include="Spider.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enum\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

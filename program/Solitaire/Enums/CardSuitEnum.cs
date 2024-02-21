@@ -11,6 +11,6 @@ namespace Solitaire.Enums
         Spade,
         Heart,
         Club,
-        Diamond 
+        Diamond
     }
 }

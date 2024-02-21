@@ -20,6 +20,6 @@ namespace Solitaire.Enums
         Ten = 10,
         Jack = 11,
         Queen = 12,
-        King = 13 
+        King = 13
     }
 }
