@@ -40,11 +40,4 @@ namespace Solitaire
             return move;
         }
     }
-
-    public class Card //карта = масть + достоинство
-    {
-        public CardSuitEnum suit { get; set;}
-        CardValueEnum value { get; set; }
-        bool bloked { get; set; } = false; //для Пирамиды
-    }
 }
