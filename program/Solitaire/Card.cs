@@ -12,5 +12,6 @@ namespace Solitaire
         public CardSuitEnum suit { get; set; }
         CardValueEnum value { get; set; }
         bool bloked { get; set; } = false; //для Пирамиды
+
     }
 }
