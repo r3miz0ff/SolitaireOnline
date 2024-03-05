@@ -1,0 +1,54 @@
+### YamlMime:TableOfContent
+items:
+- uid: Solitaire
+  name: Solitaire
+  items:
+  - uid: Solitaire.Card
+    name: Card
+  - uid: Solitaire.Klondike
+    name: Klondike
+  - uid: Solitaire.Pyramid
+    name: Pyramid
+  - uid: Solitaire.Solitaire
+    name: Solitaire
+  - uid: Solitaire.Spider
+    name: Spider
+- uid: Solitaire.Enums
+  name: Solitaire.Enums
+  items:
+  - uid: Solitaire.Enums.CardSuitEnum
+    name: CardSuitEnum
+  - uid: Solitaire.Enums.CardValueEnum
+    name: CardValueEnum
+- uid: SolitaireClient
+  name: SolitaireClient
+  items:
+  - uid: SolitaireClient.Animations
+    name: Animations
+- uid: SolitaireClient.Pages
+  name: SolitaireClient.Pages
+  items:
+  - uid: SolitaireClient.Pages.DailyTasksModel
+    name: DailyTasksModel
+  - uid: SolitaireClient.Pages.GameModel
+    name: GameModel
+  - uid: SolitaireClient.Pages.MenuModel
+    name: MenuModel
+  - uid: SolitaireClient.Pages.RatingsModel
+    name: RatingsModel
+  - uid: SolitaireClient.Pages.ResultsModel
+    name: ResultsModel
+  - uid: SolitaireClient.Pages.RulesModel
+    name: RulesModel
+  - uid: SolitaireClient.Pages.SettingsModel
+    name: SettingsModel
+  - uid: SolitaireClient.Pages.StatisticsModel
+    name: StatisticsModel
+- uid: SolitaireDB
+  name: SolitaireDB
+  items:
+  - uid: SolitaireDB.Account
+    name: Account
+  - uid: SolitaireDB.Database
+    name: Database
+memberLayout: SamePage

@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Klondike | SolitaireOnline </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Klondike | SolitaireOnline ">
+      
+      <meta name="description" content="Класс Klondike наследуется от . Реализует логику игры в &amp;quot;Клондайк&amp;quot;">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/r3miz0ff/SolitaireOnline/new/main/apiSpec/new?filename=Solitaire_Klondike.md&amp;value=---%0Auid%3A%20Solitaire.Klondike%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="SolitaireOnline">
+            SolitaireOnline
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Solitaire.Klondike">
+
+
+
+  <h1 id="Solitaire_Klondike" data-uid="Solitaire.Klondike" class="text-break">
+Class Klondike  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Solitaire.html">Solitaire</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Solitaire.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Класс <code>Klondike</code> наследуется от <a class="xref" href="Solitaire.Solitaire.html">Solitaire</a>. Реализует логику игры в &quot;Клондайк&quot;</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Klondike : Solitaire</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Solitaire.Solitaire.html">Solitaire</a></div>
+      <div><span class="xref">Klondike</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_deck">Solitaire.deck</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_field">Solitaire.field</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_timer">Solitaire.timer</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_score">Solitaire.score</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_move">Solitaire.move</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_Sort">Solitaire.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_Draw">Solitaire.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_GetScorePoints">Solitaire.GetScorePoints()</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_GetGameTime">Solitaire.GetGameTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_GetMoveCount">Solitaire.GetMoveCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Solitaire_Klondike__ctor_" data-uid="Solitaire.Klondike.#ctor*"></a>
+
+  <h3 id="Solitaire_Klondike__ctor" data-uid="Solitaire.Klondike.#ctor">
+  Klondike()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Конструктор класса</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Klondike()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Solitaire_Klondike_CardMatch_" data-uid="Solitaire.Klondike.CardMatch*"></a>
+
+  <h3 id="Solitaire_Klondike_CardMatch" data-uid="Solitaire.Klondike.CardMatch">
+  CardMatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод, проверяет возможно ли совершить ход.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CardMatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Истина, если ход возможен. Ложь в противном случае.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Solitaire_Klondike_CardMatch_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Карта может быть размещена только на карту большего достоинства и другого цвета или на пустое место, группы карт перемещаются аналогично</p>
+</div>
+
+
+
+
+  <a id="Solitaire_Klondike_CardToFoundation_" data-uid="Solitaire.Klondike.CardToFoundation*"></a>
+
+  <h3 id="Solitaire_Klondike_CardToFoundation" data-uid="Solitaire.Klondike.CardToFoundation">
+  CardToFoundation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод, отвечает за сбор карт, т.е. перемещение их в массивы в <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_field">field</a> , отвечающие за стопки, в которые собираются карты.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CardToFoundation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Solitaire_Klondike_CardToFoundation_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Сбор карт осуществляется в 4 стопки (каждая соответствует масти) от туза к королю.</p>
+</div>
+
+
+
+
+  <a id="Solitaire_Klondike_FillField_" data-uid="Solitaire.Klondike.FillField*"></a>
+
+  <h3 id="Solitaire_Klondike_FillField" data-uid="Solitaire.Klondike.FillField">
+  FillField()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод заполняет игровое поле</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Solitaire_Klondike_FillField_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Заполните <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_field">field</a> картами из <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_deck">deck</a>.
+В <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_field">field</a> должно быть 7 массивов. В первом - 1 карта, во втором - 2 и т.д.</p>
+</div>
+
+
+
+
+  <a id="Solitaire_Klondike_Hint_" data-uid="Solitaire.Klondike.Hint*"></a>
+
+  <h3 id="Solitaire_Klondike_Hint" data-uid="Solitaire.Klondike.Hint">
+  Hint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод, предлагает какой ход можно сделать</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Solitaire_Klondike_Move_" data-uid="Solitaire.Klondike.Move*"></a>
+
+  <h3 id="Solitaire_Klondike_Move" data-uid="Solitaire.Klondike.Move">
+  Move()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод реализует ход игрока в пасьянсе.
+Если <a class="xref" href="Solitaire.Klondike.html#Solitaire_Klondike_CardMatch">CardMatch()</a> вернул истину, то карта перемещается из одного массива в <a class="xref" href="Solitaire.Solitaire.html#Solitaire_Solitaire_field">field</a> в другой.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Solitaire_Klondike_MoveCancel_" data-uid="Solitaire.Klondike.MoveCancel*"></a>
+
+  <h3 id="Solitaire_Klondike_MoveCancel" data-uid="Solitaire.Klondike.MoveCancel">
+  MoveCancel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Метод, обратный методу <a class="xref" href="Solitaire.Klondike.html#Solitaire_Klondike_Move">Move()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Solitaire_Klondike_MoveCheck_" data-uid="Solitaire.Klondike.MoveCheck*"></a>
+
+  <h3 id="Solitaire_Klondike_MoveCheck" data-uid="Solitaire.Klondike.MoveCheck">
+  MoveCheck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод, проверяет есть ли доступные ходы. Если нет - игра завершается</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveCheck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Истина, если ход есть. Ложь в противном случае</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Solitaire_Klondike_Solve_" data-uid="Solitaire.Klondike.Solve*"></a>
+
+  <h3 id="Solitaire_Klondike_Solve" data-uid="Solitaire.Klondike.Solve">
+  Solve()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Этот метод, автоматически решает пасьянс.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Solve()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Solitaire_Klondike_Solve_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Решение должно выполняться пошагово.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/r3miz0ff/SolitaireOnline/blob/main/program/Solitaire/Klondike.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

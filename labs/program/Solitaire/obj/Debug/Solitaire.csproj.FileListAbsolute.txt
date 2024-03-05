@@ -1,0 +1,6 @@
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\bin\Debug\Solitaire.dll
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\bin\Debug\Solitaire.pdb
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\obj\Debug\Solitaire.csproj.AssemblyReference.cache
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\obj\Debug\Solitaire.csproj.CoreCompileInputs.cache
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\obj\Debug\Solitaire.dll
+C:\Users\vsevo\source\repos\r3miz0ff\SolitaireOnline\program\Solitaire\obj\Debug\Solitaire.pdb

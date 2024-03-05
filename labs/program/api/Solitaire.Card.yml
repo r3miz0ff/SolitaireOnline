@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire.Card
+  commentId: T:Solitaire.Card
+  id: Card
+  parent: Solitaire
+  children:
+  - Solitaire.Card.bloked
+  - Solitaire.Card.suit
+  - Solitaire.Card.value
+  langs:
+  - csharp
+  - vb
+  name: Card
+  nameWithType: Card
+  fullName: Solitaire.Card
+  type: Class
+  source:
+    remote:
+      path: program/Solitaire/Card.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Card
+    path: Solitaire/Card.cs
+    startLine: 12
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Класс <code>Card</code> - игральная карта
+  example: []
+  syntax:
+    content: public class Card
+    content.vb: Public Class Card
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Solitaire.Card.suit
+  commentId: P:Solitaire.Card.suit
+  id: suit
+  parent: Solitaire.Card
+  langs:
+  - csharp
+  - vb
+  name: suit
+  nameWithType: Card.suit
+  fullName: Solitaire.Card.suit
+  type: Property
+  source:
+    remote:
+      path: program/Solitaire/Card.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: suit
+    path: Solitaire/Card.cs
+    startLine: 15
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public CardSuitEnum suit { get; set; }
+    parameters: []
+    return:
+      type: Solitaire.Enums.CardSuitEnum
+      description: Масть карты
+    content.vb: Public Property suit As CardSuitEnum
+  overload: Solitaire.Card.suit*
+- uid: Solitaire.Card.value
+  commentId: P:Solitaire.Card.value
+  id: value
+  parent: Solitaire.Card
+  langs:
+  - csharp
+  - vb
+  name: value
+  nameWithType: Card.value
+  fullName: Solitaire.Card.value
+  type: Property
+  source:
+    remote:
+      path: program/Solitaire/Card.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: value
+    path: Solitaire/Card.cs
+    startLine: 17
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public CardValueEnum value { get; set; }
+    parameters: []
+    return:
+      type: Solitaire.Enums.CardValueEnum
+      description: Достоинство карты
+    content.vb: Public Property value As CardValueEnum
+  overload: Solitaire.Card.value*
+- uid: Solitaire.Card.bloked
+  commentId: P:Solitaire.Card.bloked
+  id: bloked
+  parent: Solitaire.Card
+  langs:
+  - csharp
+  - vb
+  name: bloked
+  nameWithType: Card.bloked
+  fullName: Solitaire.Card.bloked
+  type: Property
+  source:
+    remote:
+      path: program/Solitaire/Card.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: bloked
+    path: Solitaire/Card.cs
+    startLine: 19
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public bool bloked { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Заблокирована ли карта в <xref href="Solitaire.Pyramid" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Property bloked As Boolean
+  overload: Solitaire.Card.bloked*
+references:
+- uid: Solitaire
+  commentId: N:Solitaire
+  href: Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Solitaire.Card.suit*
+  commentId: Overload:Solitaire.Card.suit
+  href: Solitaire.Card.html#Solitaire_Card_suit
+  name: suit
+  nameWithType: Card.suit
+  fullName: Solitaire.Card.suit
+- uid: Solitaire.Enums.CardSuitEnum
+  commentId: T:Solitaire.Enums.CardSuitEnum
+  parent: Solitaire.Enums
+  href: Solitaire.Enums.CardSuitEnum.html
+  name: CardSuitEnum
+  nameWithType: CardSuitEnum
+  fullName: Solitaire.Enums.CardSuitEnum
+- uid: Solitaire.Enums
+  commentId: N:Solitaire.Enums
+  href: Solitaire.html
+  name: Solitaire.Enums
+  nameWithType: Solitaire.Enums
+  fullName: Solitaire.Enums
+  spec.csharp:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html
+  spec.vb:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html
+- uid: Solitaire.Card.value*
+  commentId: Overload:Solitaire.Card.value
+  href: Solitaire.Card.html#Solitaire_Card_value
+  name: value
+  nameWithType: Card.value
+  fullName: Solitaire.Card.value
+- uid: Solitaire.Enums.CardValueEnum
+  commentId: T:Solitaire.Enums.CardValueEnum
+  parent: Solitaire.Enums
+  href: Solitaire.Enums.CardValueEnum.html
+  name: CardValueEnum
+  nameWithType: CardValueEnum
+  fullName: Solitaire.Enums.CardValueEnum
+- uid: Solitaire.Pyramid
+  commentId: T:Solitaire.Pyramid
+  href: Solitaire.Pyramid.html
+  name: Pyramid
+  nameWithType: Pyramid
+  fullName: Solitaire.Pyramid
+- uid: Solitaire.Card.bloked*
+  commentId: Overload:Solitaire.Card.bloked
+  href: Solitaire.Card.html#Solitaire_Card_bloked
+  name: bloked
+  nameWithType: Card.bloked
+  fullName: Solitaire.Card.bloked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

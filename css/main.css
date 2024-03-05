@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+	background-color: #beacac;
+	background-size: cover;
+	background-position: top center;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 200;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+	font-size: 1.75em;
+}
+
+html, header, body, ul, li, span, a, strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+header {
+	display: block;
+}
+
+#header {
+	text-align: center;
+	padding: 6em 0 4em 0;
+}
+
+body {
+	line-height: 1;
+}
+
+ul {
+	list-style: disc;
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+	font-size: 1.25em;
+}
+
+ul li {
+	padding-left: 0.5em;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ol {
+	margin: 0 0 2em 0;
+	font-size: 1em;
+}
+ol li {
+	padding-left: 0.5em;
+}
+
+strong {
+	font-weight: 200;
+}

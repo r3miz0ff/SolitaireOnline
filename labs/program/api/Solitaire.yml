@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire
+  commentId: N:Solitaire
+  id: Solitaire
+  children:
+  - Solitaire.Card
+  - Solitaire.Klondike
+  - Solitaire.Pyramid
+  - Solitaire.Solitaire
+  - Solitaire.Spider
+  langs:
+  - csharp
+  - vb
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire
+  type: Namespace
+  assemblies:
+  - Solitaire
+references:
+- uid: Solitaire.Card
+  commentId: T:Solitaire.Card
+  href: Solitaire.Card.html
+  name: Card
+  nameWithType: Card
+  fullName: Solitaire.Card
+- uid: Solitaire.Klondike
+  commentId: T:Solitaire.Klondike
+  href: Solitaire.Klondike.html
+  name: Klondike
+  nameWithType: Klondike
+  fullName: Solitaire.Klondike
+- uid: Solitaire.Pyramid
+  commentId: T:Solitaire.Pyramid
+  href: Solitaire.Pyramid.html
+  name: Pyramid
+  nameWithType: Pyramid
+  fullName: Solitaire.Pyramid
+- uid: Solitaire.Solitaire
+  commentId: T:Solitaire.Solitaire
+  parent: Solitaire
+  href: Solitaire.Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire.Solitaire
+- uid: Solitaire.Spider
+  commentId: T:Solitaire.Spider
+  href: Solitaire.Spider.html
+  name: Spider
+  nameWithType: Spider
+  fullName: Solitaire.Spider
+- uid: Solitaire
+  commentId: N:Solitaire
+  href: Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire

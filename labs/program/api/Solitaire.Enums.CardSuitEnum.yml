@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire.Enums.CardSuitEnum
+  commentId: T:Solitaire.Enums.CardSuitEnum
+  id: CardSuitEnum
+  parent: Solitaire.Enums
+  children:
+  - Solitaire.Enums.CardSuitEnum.Club
+  - Solitaire.Enums.CardSuitEnum.Diamond
+  - Solitaire.Enums.CardSuitEnum.Heart
+  - Solitaire.Enums.CardSuitEnum.Spade
+  langs:
+  - csharp
+  - vb
+  name: CardSuitEnum
+  nameWithType: CardSuitEnum
+  fullName: Solitaire.Enums.CardSuitEnum
+  type: Enum
+  source:
+    remote:
+      path: program/Solitaire/Enums/CardSuitEnum.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: CardSuitEnum
+    path: Solitaire/Enums/CardSuitEnum.cs
+    startLine: 18
+  assemblies:
+  - Solitaire
+  namespace: Solitaire.Enums
+  summary: >-
+    Тип перечисления, предназначенный для записи масти карты.
+
+    <example>
+
+    Например, карта с мастью - "Черва":
+
+    <pre><code class="lang-csharp">var card = new Card();
+
+    card.suit = CardSuitEnum.Heart</code></pre>
+
+    </example>
+  example: []
+  syntax:
+    content: public enum CardSuitEnum
+    content.vb: Public Enum CardSuitEnum
+- uid: Solitaire.Enums.CardSuitEnum.Spade
+  commentId: F:Solitaire.Enums.CardSuitEnum.Spade
+  id: Spade
+  parent: Solitaire.Enums.CardSuitEnum
+  langs:
+  - csharp
+  - vb
+  name: Spade
+  nameWithType: CardSuitEnum.Spade
+  fullName: Solitaire.Enums.CardSuitEnum.Spade
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Enums/CardSuitEnum.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Spade
+    path: Solitaire/Enums/CardSuitEnum.cs
+    startLine: 20
+  assemblies:
+  - Solitaire
+  namespace: Solitaire.Enums
+  syntax:
+    content: Spade = 0
+    return:
+      type: Solitaire.Enums.CardSuitEnum
+- uid: Solitaire.Enums.CardSuitEnum.Heart
+  commentId: F:Solitaire.Enums.CardSuitEnum.Heart
+  id: Heart
+  parent: Solitaire.Enums.CardSuitEnum
+  langs:
+  - csharp
+  - vb
+  name: Heart
+  nameWithType: CardSuitEnum.Heart
+  fullName: Solitaire.Enums.CardSuitEnum.Heart
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Enums/CardSuitEnum.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Heart
+    path: Solitaire/Enums/CardSuitEnum.cs
+    startLine: 21
+  assemblies:
+  - Solitaire
+  namespace: Solitaire.Enums
+  syntax:
+    content: Heart = 1
+    return:
+      type: Solitaire.Enums.CardSuitEnum
+- uid: Solitaire.Enums.CardSuitEnum.Club
+  commentId: F:Solitaire.Enums.CardSuitEnum.Club
+  id: Club
+  parent: Solitaire.Enums.CardSuitEnum
+  langs:
+  - csharp
+  - vb
+  name: Club
+  nameWithType: CardSuitEnum.Club
+  fullName: Solitaire.Enums.CardSuitEnum.Club
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Enums/CardSuitEnum.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Club
+    path: Solitaire/Enums/CardSuitEnum.cs
+    startLine: 22
+  assemblies:
+  - Solitaire
+  namespace: Solitaire.Enums
+  syntax:
+    content: Club = 2
+    return:
+      type: Solitaire.Enums.CardSuitEnum
+- uid: Solitaire.Enums.CardSuitEnum.Diamond
+  commentId: F:Solitaire.Enums.CardSuitEnum.Diamond
+  id: Diamond
+  parent: Solitaire.Enums.CardSuitEnum
+  langs:
+  - csharp
+  - vb
+  name: Diamond
+  nameWithType: CardSuitEnum.Diamond
+  fullName: Solitaire.Enums.CardSuitEnum.Diamond
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Enums/CardSuitEnum.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Diamond
+    path: Solitaire/Enums/CardSuitEnum.cs
+    startLine: 23
+  assemblies:
+  - Solitaire
+  namespace: Solitaire.Enums
+  syntax:
+    content: Diamond = 3
+    return:
+      type: Solitaire.Enums.CardSuitEnum
+references:
+- uid: Solitaire.Enums
+  commentId: N:Solitaire.Enums
+  href: Solitaire.html
+  name: Solitaire.Enums
+  nameWithType: Solitaire.Enums
+  fullName: Solitaire.Enums
+  spec.csharp:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html
+  spec.vb:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html
+- uid: Solitaire.Enums.CardSuitEnum
+  commentId: T:Solitaire.Enums.CardSuitEnum
+  parent: Solitaire.Enums
+  href: Solitaire.Enums.CardSuitEnum.html
+  name: CardSuitEnum
+  nameWithType: CardSuitEnum
+  fullName: Solitaire.Enums.CardSuitEnum

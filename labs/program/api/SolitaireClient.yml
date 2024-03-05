@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SolitaireClient
+  commentId: N:SolitaireClient
+  id: SolitaireClient
+  children:
+  - SolitaireClient.Animations
+  langs:
+  - csharp
+  - vb
+  name: SolitaireClient
+  nameWithType: SolitaireClient
+  fullName: SolitaireClient
+  type: Namespace
+  assemblies:
+  - SolitaireClient
+references:
+- uid: SolitaireClient.Animations
+  commentId: T:SolitaireClient.Animations
+  href: SolitaireClient.Animations.html
+  name: Animations
+  nameWithType: Animations
+  fullName: SolitaireClient.Animations

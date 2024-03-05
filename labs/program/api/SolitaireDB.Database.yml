@@ -1,0 +1,468 @@
+### YamlMime:ManagedReference
+items:
+- uid: SolitaireDB.Database
+  commentId: T:SolitaireDB.Database
+  id: Database
+  parent: SolitaireDB
+  children:
+  - SolitaireDB.Database.#ctor
+  - SolitaireDB.Database.GetAccount(System.Int32)
+  - SolitaireDB.Database.SaveAccount(SolitaireDB.Account)
+  - SolitaireDB.Database.conString
+  langs:
+  - csharp
+  - vb
+  name: Database
+  nameWithType: Database
+  fullName: SolitaireDB.Database
+  type: Class
+  source:
+    remote:
+      path: program/SolitaireDB/Database.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Database
+    path: SolitaireDB/Database.cs
+    startLine: 11
+  assemblies:
+  - SolitaireDB
+  namespace: SolitaireDB
+  summary: Класс <code>Database</code> - работа с базой данных
+  example: []
+  syntax:
+    content: public class Database
+    content.vb: Public Class Database
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: SolitaireDB.Database.conString
+  commentId: F:SolitaireDB.Database.conString
+  id: conString
+  parent: SolitaireDB.Database
+  langs:
+  - csharp
+  - vb
+  name: conString
+  nameWithType: Database.conString
+  fullName: SolitaireDB.Database.conString
+  type: Field
+  source:
+    remote:
+      path: program/SolitaireDB/Database.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: conString
+    path: SolitaireDB/Database.cs
+    startLine: 16
+  assemblies:
+  - SolitaireDB
+  namespace: SolitaireDB
+  summary: <returns>Строка подключения к базе данных</returns>
+  example: []
+  syntax:
+    content: public string conString
+    return:
+      type: System.String
+    content.vb: Public conString As String
+- uid: SolitaireDB.Database.#ctor
+  commentId: M:SolitaireDB.Database.#ctor
+  id: '#ctor'
+  parent: SolitaireDB.Database
+  langs:
+  - csharp
+  - vb
+  name: Database()
+  nameWithType: Database.Database()
+  fullName: SolitaireDB.Database.Database()
+  type: Constructor
+  source:
+    remote:
+      path: program/SolitaireDB/Database.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: .ctor
+    path: SolitaireDB/Database.cs
+    startLine: 20
+  assemblies:
+  - SolitaireDB
+  namespace: SolitaireDB
+  summary: Конструктор класса
+  example: []
+  syntax:
+    content: public Database()
+    content.vb: Public Sub New()
+  overload: SolitaireDB.Database.#ctor*
+  nameWithType.vb: Database.New()
+  fullName.vb: SolitaireDB.Database.New()
+  name.vb: New()
+- uid: SolitaireDB.Database.GetAccount(System.Int32)
+  commentId: M:SolitaireDB.Database.GetAccount(System.Int32)
+  id: GetAccount(System.Int32)
+  parent: SolitaireDB.Database
+  langs:
+  - csharp
+  - vb
+  name: GetAccount(int)
+  nameWithType: Database.GetAccount(int)
+  fullName: SolitaireDB.Database.GetAccount(int)
+  type: Method
+  source:
+    remote:
+      path: program/SolitaireDB/Database.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: GetAccount
+    path: SolitaireDB/Database.cs
+    startLine: 27
+  assemblies:
+  - SolitaireDB
+  namespace: SolitaireDB
+  summary: Получает из базы запись с данными аккаунта
+  example: []
+  syntax:
+    content: public Account GetAccount(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ID аккаунта, который необходимо получить
+    return:
+      type: SolitaireDB.Account
+      description: Возвращает экземпляр класса <xref href="SolitaireDB.Account" data-throw-if-not-resolved="false"></xref> (пустой, если аккаунт не найден)
+    content.vb: Public Function GetAccount(id As Integer) As Account
+  overload: SolitaireDB.Database.GetAccount*
+  nameWithType.vb: Database.GetAccount(Integer)
+  fullName.vb: SolitaireDB.Database.GetAccount(Integer)
+  name.vb: GetAccount(Integer)
+- uid: SolitaireDB.Database.SaveAccount(SolitaireDB.Account)
+  commentId: M:SolitaireDB.Database.SaveAccount(SolitaireDB.Account)
+  id: SaveAccount(SolitaireDB.Account)
+  parent: SolitaireDB.Database
+  langs:
+  - csharp
+  - vb
+  name: SaveAccount(Account)
+  nameWithType: Database.SaveAccount(Account)
+  fullName: SolitaireDB.Database.SaveAccount(SolitaireDB.Account)
+  type: Method
+  source:
+    remote:
+      path: program/SolitaireDB/Database.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: SaveAccount
+    path: SolitaireDB/Database.cs
+    startLine: 36
+  assemblies:
+  - SolitaireDB
+  namespace: SolitaireDB
+  summary: Сохраняет аккаунт в базу
+  example: []
+  syntax:
+    content: public void SaveAccount(Account account)
+    parameters:
+    - id: account
+      type: SolitaireDB.Account
+      description: Экземпляр класса <xref href="SolitaireDB.Account" data-throw-if-not-resolved="false"></xref>, который необходимо сохранить
+    content.vb: Public Sub SaveAccount(account As Account)
+  overload: SolitaireDB.Database.SaveAccount*
+references:
+- uid: SolitaireDB
+  commentId: N:SolitaireDB
+  href: SolitaireDB.html
+  name: SolitaireDB
+  nameWithType: SolitaireDB
+  fullName: SolitaireDB
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SolitaireDB.Database.#ctor*
+  commentId: Overload:SolitaireDB.Database.#ctor
+  href: SolitaireDB.Database.html#SolitaireDB_Database__ctor
+  name: Database
+  nameWithType: Database.Database
+  fullName: SolitaireDB.Database.Database
+  nameWithType.vb: Database.New
+  fullName.vb: SolitaireDB.Database.New
+  name.vb: New
+- uid: SolitaireDB.Account
+  commentId: T:SolitaireDB.Account
+  parent: SolitaireDB
+  href: SolitaireDB.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: SolitaireDB.Account
+- uid: SolitaireDB.Database.GetAccount*
+  commentId: Overload:SolitaireDB.Database.GetAccount
+  href: SolitaireDB.Database.html#SolitaireDB_Database_GetAccount_System_Int32_
+  name: GetAccount
+  nameWithType: Database.GetAccount
+  fullName: SolitaireDB.Database.GetAccount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SolitaireDB.Database.SaveAccount*
+  commentId: Overload:SolitaireDB.Database.SaveAccount
+  href: SolitaireDB.Database.html#SolitaireDB_Database_SaveAccount_SolitaireDB_Account_
+  name: SaveAccount
+  nameWithType: Database.SaveAccount
+  fullName: SolitaireDB.Database.SaveAccount

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: SolitaireDB
+  commentId: N:SolitaireDB
+  id: SolitaireDB
+  children:
+  - SolitaireDB.Account
+  - SolitaireDB.Database
+  langs:
+  - csharp
+  - vb
+  name: SolitaireDB
+  nameWithType: SolitaireDB
+  fullName: SolitaireDB
+  type: Namespace
+  assemblies:
+  - SolitaireDB
+references:
+- uid: SolitaireDB.Account
+  commentId: T:SolitaireDB.Account
+  parent: SolitaireDB
+  href: SolitaireDB.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: SolitaireDB.Account
+- uid: SolitaireDB.Database
+  commentId: T:SolitaireDB.Database
+  href: SolitaireDB.Database.html
+  name: Database
+  nameWithType: Database
+  fullName: SolitaireDB.Database
+- uid: SolitaireDB
+  commentId: N:SolitaireDB
+  href: SolitaireDB.html
+  name: SolitaireDB
+  nameWithType: SolitaireDB
+  fullName: SolitaireDB

@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire.Solitaire
+  commentId: T:Solitaire.Solitaire
+  id: Solitaire
+  parent: Solitaire
+  children:
+  - Solitaire.Solitaire.Draw
+  - Solitaire.Solitaire.GetGameTime
+  - Solitaire.Solitaire.GetMoveCount
+  - Solitaire.Solitaire.GetScorePoints
+  - Solitaire.Solitaire.Sort
+  - Solitaire.Solitaire.deck
+  - Solitaire.Solitaire.field
+  - Solitaire.Solitaire.move
+  - Solitaire.Solitaire.score
+  - Solitaire.Solitaire.timer
+  langs:
+  - csharp
+  - vb
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire.Solitaire
+  type: Class
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Solitaire
+    path: Solitaire/Solitaire.cs
+    startLine: 17
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: >-
+    Класс <code>Solitaire</code> - пасьянс
+
+    <p>
+
+    Реализовывает основную логику игры в пасьянс, общую для всех видов.
+
+    </p>
+  example: []
+  syntax:
+    content: public class Solitaire
+    content.vb: Public Class Solitaire
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Solitaire.Klondike
+  - Solitaire.Pyramid
+  - Solitaire.Spider
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Solitaire.Solitaire.deck
+  commentId: P:Solitaire.Solitaire.deck
+  id: deck
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: deck
+  nameWithType: Solitaire.deck
+  fullName: Solitaire.Solitaire.deck
+  type: Property
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: deck
+    path: Solitaire/Solitaire.cs
+    startLine: 20
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public List<Card> deck { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Solitaire.Card}
+      description: Колода, представляет собой список карт <xref href="Solitaire.Card" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Property deck As List(Of Card)
+  overload: Solitaire.Solitaire.deck*
+- uid: Solitaire.Solitaire.field
+  commentId: P:Solitaire.Solitaire.field
+  id: field
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: field
+  nameWithType: Solitaire.field
+  fullName: Solitaire.Solitaire.field
+  type: Property
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: field
+    path: Solitaire/Solitaire.cs
+    startLine: 23
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  remarks: Каждый массив представляет собой стопку карт в Клондайке <xref href="Solitaire.Klondike" data-throw-if-not-resolved="false"></xref> или Пауке <xref href="Solitaire.Spider" data-throw-if-not-resolved="false"></xref>, или "пирамиду" в Пирамиде <xref href="Solitaire.Pyramid" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public List<Card[]> field { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Solitaire.Card[]}
+      description: Игровое поле, представляет собой список массивов карт <xref href="Solitaire.Card" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Property field As List(Of Card())
+  overload: Solitaire.Solitaire.field*
+- uid: Solitaire.Solitaire.timer
+  commentId: F:Solitaire.Solitaire.timer
+  id: timer
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: timer
+  nameWithType: Solitaire.timer
+  fullName: Solitaire.Solitaire.timer
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: timer
+    path: Solitaire/Solitaire.cs
+    startLine: 25
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public Timer timer
+    return:
+      type: System.Threading.Timer
+      description: Время хода. Для подробной информации по работе с таймерами смотрите <a href="https://learn.microsoft.com/ru-ru/dotnet/api/system.threading.timer?view=net-7.0">https://learn.microsoft.com/ru-ru/dotnet/api/system.threading.timer?view=net-7.0</a>
+    content.vb: Public timer As Timer
+- uid: Solitaire.Solitaire.score
+  commentId: F:Solitaire.Solitaire.score
+  id: score
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: score
+  nameWithType: Solitaire.score
+  fullName: Solitaire.Solitaire.score
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: score
+    path: Solitaire/Solitaire.cs
+    startLine: 27
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public int score
+    return:
+      type: System.Int32
+      description: Очки, начисляемые игроку за собранный пасьянс
+    content.vb: Public score As Integer
+- uid: Solitaire.Solitaire.move
+  commentId: F:Solitaire.Solitaire.move
+  id: move
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: move
+  nameWithType: Solitaire.move
+  fullName: Solitaire.Solitaire.move
+  type: Field
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: move
+    path: Solitaire/Solitaire.cs
+    startLine: 29
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public int move
+    return:
+      type: System.Int32
+      description: Количество ходов, сделанных игроком
+    content.vb: Public move As Integer
+- uid: Solitaire.Solitaire.Sort
+  commentId: M:Solitaire.Solitaire.Sort
+  id: Sort
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: Sort()
+  nameWithType: Solitaire.Sort()
+  fullName: Solitaire.Solitaire.Sort()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Sort
+    path: Solitaire/Solitaire.cs
+    startLine: 36
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод сортирует колоды.
+  remarks: Используйте Random <a href="https://learn.microsoft.com/ru-ru/dotnet/api/system.random?view=net-8.0">https://learn.microsoft.com/ru-ru/dotnet/api/system.random?view=net-8.0</a> для пересортировки <code>deck</code> <xref href="Solitaire.Solitaire.deck" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Sort()
+    content.vb: Public Sub Sort()
+  overload: Solitaire.Solitaire.Sort*
+- uid: Solitaire.Solitaire.Draw
+  commentId: M:Solitaire.Solitaire.Draw
+  id: Draw
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: Solitaire.Draw()
+  fullName: Solitaire.Solitaire.Draw()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Draw
+    path: Solitaire/Solitaire.cs
+    startLine: 46
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод раздает карты.
+  remarks: Используйте Random <a href="https://learn.microsoft.com/ru-ru/dotnet/api/system.random?view=net-8.0">https://learn.microsoft.com/ru-ru/dotnet/api/system.random?view=net-8.0</a> для заполнения <code>deck</code> <xref href="Solitaire.Solitaire.deck" data-throw-if-not-resolved="false"></xref> в случайном порядке
+  example: []
+  syntax:
+    content: public void Draw()
+    content.vb: Public Sub Draw()
+  overload: Solitaire.Solitaire.Draw*
+- uid: Solitaire.Solitaire.GetScorePoints
+  commentId: M:Solitaire.Solitaire.GetScorePoints
+  id: GetScorePoints
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: GetScorePoints()
+  nameWithType: Solitaire.GetScorePoints()
+  fullName: Solitaire.Solitaire.GetScorePoints()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: GetScorePoints
+    path: Solitaire/Solitaire.cs
+    startLine: 59
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод вычисляет очки <xref href="Solitaire.Solitaire.score" data-throw-if-not-resolved="false"></xref>
+  remarks: При подсчете очков должны учитываться количество ходо и время игры
+  example: []
+  syntax:
+    content: public int GetScorePoints()
+    return:
+      type: System.Int32
+      description: Возвращает очки, записанные в <code>score</code> <xref href="Solitaire.Solitaire.score" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetScorePoints() As Integer
+  overload: Solitaire.Solitaire.GetScorePoints*
+- uid: Solitaire.Solitaire.GetGameTime
+  commentId: M:Solitaire.Solitaire.GetGameTime
+  id: GetGameTime
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: GetGameTime()
+  nameWithType: Solitaire.GetGameTime()
+  fullName: Solitaire.Solitaire.GetGameTime()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: GetGameTime
+    path: Solitaire/Solitaire.cs
+    startLine: 67
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public Timer GetGameTime()
+    return:
+      type: System.Threading.Timer
+      description: Возвращает время игры, записанное в <code>timer</code> <xref href="Solitaire.Solitaire.timer" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetGameTime() As Timer
+  overload: Solitaire.Solitaire.GetGameTime*
+- uid: Solitaire.Solitaire.GetMoveCount
+  commentId: M:Solitaire.Solitaire.GetMoveCount
+  id: GetMoveCount
+  parent: Solitaire.Solitaire
+  langs:
+  - csharp
+  - vb
+  name: GetMoveCount()
+  nameWithType: Solitaire.GetMoveCount()
+  fullName: Solitaire.Solitaire.GetMoveCount()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Solitaire.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: GetMoveCount
+    path: Solitaire/Solitaire.cs
+    startLine: 75
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  example: []
+  syntax:
+    content: public int GetMoveCount()
+    return:
+      type: System.Int32
+      description: Возвращает количество ходов, записанное в <code>move</code> <xref href="Solitaire.Solitaire.move" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetMoveCount() As Integer
+  overload: Solitaire.Solitaire.GetMoveCount*
+references:
+- uid: Solitaire
+  commentId: N:Solitaire
+  href: Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Solitaire.Card
+  commentId: T:Solitaire.Card
+  href: Solitaire.Card.html
+  name: Card
+  nameWithType: Card
+  fullName: Solitaire.Card
+- uid: Solitaire.Solitaire.deck*
+  commentId: Overload:Solitaire.Solitaire.deck
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_deck
+  name: deck
+  nameWithType: Solitaire.deck
+  fullName: Solitaire.Solitaire.deck
+- uid: System.Collections.Generic.List{Solitaire.Card}
+  commentId: T:System.Collections.Generic.List{Solitaire.Card}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Card>
+  nameWithType: List<Card>
+  fullName: System.Collections.Generic.List<Solitaire.Card>
+  nameWithType.vb: List(Of Card)
+  fullName.vb: System.Collections.Generic.List(Of Solitaire.Card)
+  name.vb: List(Of Card)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Solitaire.Card
+    name: Card
+    href: Solitaire.Card.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Solitaire.Card
+    name: Card
+    href: Solitaire.Card.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Solitaire.Klondike
+  commentId: T:Solitaire.Klondike
+  href: Solitaire.Klondike.html
+  name: Klondike
+  nameWithType: Klondike
+  fullName: Solitaire.Klondike
+- uid: Solitaire.Spider
+  commentId: T:Solitaire.Spider
+  href: Solitaire.Spider.html
+  name: Spider
+  nameWithType: Spider
+  fullName: Solitaire.Spider
+- uid: Solitaire.Pyramid
+  commentId: T:Solitaire.Pyramid
+  href: Solitaire.Pyramid.html
+  name: Pyramid
+  nameWithType: Pyramid
+  fullName: Solitaire.Pyramid
+- uid: Solitaire.Solitaire.field*
+  commentId: Overload:Solitaire.Solitaire.field
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_field
+  name: field
+  nameWithType: Solitaire.field
+  fullName: Solitaire.Solitaire.field
+- uid: System.Collections.Generic.List{Solitaire.Card[]}
+  commentId: T:System.Collections.Generic.List{Solitaire.Card[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Card[]>
+  nameWithType: List<Card[]>
+  fullName: System.Collections.Generic.List<Solitaire.Card[]>
+  nameWithType.vb: List(Of Card())
+  fullName.vb: System.Collections.Generic.List(Of Solitaire.Card())
+  name.vb: List(Of Card())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Solitaire.Card
+    name: Card
+    href: Solitaire.Card.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Solitaire.Card
+    name: Card
+    href: Solitaire.Card.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Threading.Timer
+  commentId: T:System.Threading.Timer
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.timer
+  name: Timer
+  nameWithType: Timer
+  fullName: System.Threading.Timer
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Solitaire.Solitaire.deck
+  commentId: P:Solitaire.Solitaire.deck
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_deck
+  name: deck
+  nameWithType: Solitaire.deck
+  fullName: Solitaire.Solitaire.deck
+- uid: Solitaire.Solitaire.Sort*
+  commentId: Overload:Solitaire.Solitaire.Sort
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_Sort
+  name: Sort
+  nameWithType: Solitaire.Sort
+  fullName: Solitaire.Solitaire.Sort
+- uid: Solitaire.Solitaire
+  commentId: T:Solitaire.Solitaire
+  parent: Solitaire
+  href: Solitaire.Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire.Solitaire
+- uid: Solitaire.Solitaire.Draw*
+  commentId: Overload:Solitaire.Solitaire.Draw
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_Draw
+  name: Draw
+  nameWithType: Solitaire.Draw
+  fullName: Solitaire.Solitaire.Draw
+- uid: Solitaire.Solitaire.score
+  commentId: F:Solitaire.Solitaire.score
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_score
+  name: score
+  nameWithType: Solitaire.score
+  fullName: Solitaire.Solitaire.score
+- uid: Solitaire.Solitaire.GetScorePoints*
+  commentId: Overload:Solitaire.Solitaire.GetScorePoints
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetScorePoints
+  name: GetScorePoints
+  nameWithType: Solitaire.GetScorePoints
+  fullName: Solitaire.Solitaire.GetScorePoints
+- uid: Solitaire.Solitaire.timer
+  commentId: F:Solitaire.Solitaire.timer
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_timer
+  name: timer
+  nameWithType: Solitaire.timer
+  fullName: Solitaire.Solitaire.timer
+- uid: Solitaire.Solitaire.GetGameTime*
+  commentId: Overload:Solitaire.Solitaire.GetGameTime
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetGameTime
+  name: GetGameTime
+  nameWithType: Solitaire.GetGameTime
+  fullName: Solitaire.Solitaire.GetGameTime
+- uid: Solitaire.Solitaire.move
+  commentId: F:Solitaire.Solitaire.move
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_move
+  name: move
+  nameWithType: Solitaire.move
+  fullName: Solitaire.Solitaire.move
+- uid: Solitaire.Solitaire.GetMoveCount*
+  commentId: Overload:Solitaire.Solitaire.GetMoveCount
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetMoveCount
+  name: GetMoveCount
+  nameWithType: Solitaire.GetMoveCount
+  fullName: Solitaire.Solitaire.GetMoveCount

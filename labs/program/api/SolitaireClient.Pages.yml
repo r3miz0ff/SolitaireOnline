@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: SolitaireClient.Pages
+  commentId: N:SolitaireClient.Pages
+  id: SolitaireClient.Pages
+  children:
+  - SolitaireClient.Pages.DailyTasksModel
+  - SolitaireClient.Pages.GameModel
+  - SolitaireClient.Pages.MenuModel
+  - SolitaireClient.Pages.RatingsModel
+  - SolitaireClient.Pages.ResultsModel
+  - SolitaireClient.Pages.RulesModel
+  - SolitaireClient.Pages.SettingsModel
+  - SolitaireClient.Pages.StatisticsModel
+  langs:
+  - csharp
+  - vb
+  name: SolitaireClient.Pages
+  nameWithType: SolitaireClient.Pages
+  fullName: SolitaireClient.Pages
+  type: Namespace
+  assemblies:
+  - SolitaireClient
+references:
+- uid: SolitaireClient.Pages.DailyTasksModel
+  commentId: T:SolitaireClient.Pages.DailyTasksModel
+  href: SolitaireClient.Pages.DailyTasksModel.html
+  name: DailyTasksModel
+  nameWithType: DailyTasksModel
+  fullName: SolitaireClient.Pages.DailyTasksModel
+- uid: SolitaireClient.Pages.GameModel
+  commentId: T:SolitaireClient.Pages.GameModel
+  href: SolitaireClient.Pages.GameModel.html
+  name: GameModel
+  nameWithType: GameModel
+  fullName: SolitaireClient.Pages.GameModel
+- uid: SolitaireClient.Pages.MenuModel
+  commentId: T:SolitaireClient.Pages.MenuModel
+  href: SolitaireClient.Pages.MenuModel.html
+  name: MenuModel
+  nameWithType: MenuModel
+  fullName: SolitaireClient.Pages.MenuModel
+- uid: SolitaireClient.Pages.RatingsModel
+  commentId: T:SolitaireClient.Pages.RatingsModel
+  href: SolitaireClient.Pages.RatingsModel.html
+  name: RatingsModel
+  nameWithType: RatingsModel
+  fullName: SolitaireClient.Pages.RatingsModel
+- uid: SolitaireClient.Pages.ResultsModel
+  commentId: T:SolitaireClient.Pages.ResultsModel
+  href: SolitaireClient.Pages.ResultsModel.html
+  name: ResultsModel
+  nameWithType: ResultsModel
+  fullName: SolitaireClient.Pages.ResultsModel
+- uid: SolitaireClient.Pages.RulesModel
+  commentId: T:SolitaireClient.Pages.RulesModel
+  href: SolitaireClient.Pages.RulesModel.html
+  name: RulesModel
+  nameWithType: RulesModel
+  fullName: SolitaireClient.Pages.RulesModel
+- uid: SolitaireClient.Pages.SettingsModel
+  commentId: T:SolitaireClient.Pages.SettingsModel
+  href: SolitaireClient.Pages.SettingsModel.html
+  name: SettingsModel
+  nameWithType: SettingsModel
+  fullName: SolitaireClient.Pages.SettingsModel
+- uid: SolitaireClient.Pages.StatisticsModel
+  commentId: T:SolitaireClient.Pages.StatisticsModel
+  href: SolitaireClient.Pages.StatisticsModel.html
+  name: StatisticsModel
+  nameWithType: StatisticsModel
+  fullName: SolitaireClient.Pages.StatisticsModel

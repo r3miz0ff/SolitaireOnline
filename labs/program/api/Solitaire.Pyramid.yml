@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire.Pyramid
+  commentId: T:Solitaire.Pyramid
+  id: Pyramid
+  parent: Solitaire
+  children:
+  - Solitaire.Pyramid.#ctor
+  - Solitaire.Pyramid.CardBlock
+  - Solitaire.Pyramid.CardMatch
+  - Solitaire.Pyramid.FillField
+  - Solitaire.Pyramid.Hint
+  - Solitaire.Pyramid.Move
+  - Solitaire.Pyramid.MoveCancel
+  - Solitaire.Pyramid.MoveCheck
+  - Solitaire.Pyramid.Solve
+  langs:
+  - csharp
+  - vb
+  name: Pyramid
+  nameWithType: Pyramid
+  fullName: Solitaire.Pyramid
+  type: Class
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Pyramid
+    path: Solitaire/Pyramid.cs
+    startLine: 11
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Класс <code>Pyramid</code> наследуется от <xref href="Solitaire.Solitaire" data-throw-if-not-resolved="false"></xref>. Реализует логику игры в "Пирамиду"
+  example: []
+  syntax:
+    content: 'public class Pyramid : Solitaire'
+    content.vb: Public Class Pyramid Inherits Solitaire
+  inheritance:
+  - System.Object
+  - Solitaire.Solitaire
+  inheritedMembers:
+  - Solitaire.Solitaire.deck
+  - Solitaire.Solitaire.field
+  - Solitaire.Solitaire.timer
+  - Solitaire.Solitaire.score
+  - Solitaire.Solitaire.move
+  - Solitaire.Solitaire.Sort
+  - Solitaire.Solitaire.Draw
+  - Solitaire.Solitaire.GetScorePoints
+  - Solitaire.Solitaire.GetGameTime
+  - Solitaire.Solitaire.GetMoveCount
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Solitaire.Pyramid.#ctor
+  commentId: M:Solitaire.Pyramid.#ctor
+  id: '#ctor'
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: Pyramid()
+  nameWithType: Pyramid.Pyramid()
+  fullName: Solitaire.Pyramid.Pyramid()
+  type: Constructor
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: .ctor
+    path: Solitaire/Pyramid.cs
+    startLine: 16
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Конструктор класса
+  example: []
+  syntax:
+    content: public Pyramid()
+    content.vb: Public Sub New()
+  overload: Solitaire.Pyramid.#ctor*
+  nameWithType.vb: Pyramid.New()
+  fullName.vb: Solitaire.Pyramid.New()
+  name.vb: New()
+- uid: Solitaire.Pyramid.FillField
+  commentId: M:Solitaire.Pyramid.FillField
+  id: FillField
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: FillField()
+  nameWithType: Pyramid.FillField()
+  fullName: Solitaire.Pyramid.FillField()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: FillField
+    path: Solitaire/Pyramid.cs
+    startLine: 25
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод заполняет игровое поле
+  remarks: >-
+    Заполните <xref href="Solitaire.Solitaire.field" data-throw-if-not-resolved="false"></xref> картами из <xref href="Solitaire.Solitaire.deck" data-throw-if-not-resolved="false"></xref>.
+
+    В <xref href="Solitaire.Solitaire.field" data-throw-if-not-resolved="false"></xref> должно быть 7 массивов. В первом - 1 карта, во втором - 2 и т.д.
+
+    Необходимо учитывать, что в пасьянсе карты располагаются не стопками, а рядами, блокируя друг друга
+  example: []
+  syntax:
+    content: public void FillField()
+    content.vb: Public Sub FillField()
+  overload: Solitaire.Pyramid.FillField*
+- uid: Solitaire.Pyramid.Move
+  commentId: M:Solitaire.Pyramid.Move
+  id: Move
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: Move()
+  nameWithType: Pyramid.Move()
+  fullName: Solitaire.Pyramid.Move()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Move
+    path: Solitaire/Pyramid.cs
+    startLine: 33
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: >-
+    Этот метод реализует ход игрока в пасьянсе.
+
+    Если <xref href="Solitaire.Pyramid.CardMatch" data-throw-if-not-resolved="false"></xref> вернул истину, то выбранные карты удаляются из <xref href="Solitaire.Solitaire.field" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Move()
+    content.vb: Public Sub Move()
+  overload: Solitaire.Pyramid.Move*
+- uid: Solitaire.Pyramid.MoveCancel
+  commentId: M:Solitaire.Pyramid.MoveCancel
+  id: MoveCancel
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: MoveCancel()
+  nameWithType: Pyramid.MoveCancel()
+  fullName: Solitaire.Pyramid.MoveCancel()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: MoveCancel
+    path: Solitaire/Pyramid.cs
+    startLine: 40
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Метод, обратный методу <xref href="Solitaire.Pyramid.Move" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void MoveCancel()
+    content.vb: Public Sub MoveCancel()
+  overload: Solitaire.Pyramid.MoveCancel*
+- uid: Solitaire.Pyramid.MoveCheck
+  commentId: M:Solitaire.Pyramid.MoveCheck
+  id: MoveCheck
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: MoveCheck()
+  nameWithType: Pyramid.MoveCheck()
+  fullName: Solitaire.Pyramid.MoveCheck()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: MoveCheck
+    path: Solitaire/Pyramid.cs
+    startLine: 50
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод, проверяет есть ли доступные ходы. Если нет - игра завершается
+  example: []
+  syntax:
+    content: public bool MoveCheck()
+    return:
+      type: System.Boolean
+      description: Истина, если ход есть. Ложь в противном случае
+    content.vb: Public Function MoveCheck() As Boolean
+  overload: Solitaire.Pyramid.MoveCheck*
+- uid: Solitaire.Pyramid.Solve
+  commentId: M:Solitaire.Pyramid.Solve
+  id: Solve
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: Solve()
+  nameWithType: Pyramid.Solve()
+  fullName: Solitaire.Pyramid.Solve()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Solve
+    path: Solitaire/Pyramid.cs
+    startLine: 61
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод, автоматически решает пасьянс.
+  remarks: Решение должно выполняться пошагово.
+  example: []
+  syntax:
+    content: public void Solve()
+    content.vb: Public Sub Solve()
+  overload: Solitaire.Pyramid.Solve*
+- uid: Solitaire.Pyramid.Hint
+  commentId: M:Solitaire.Pyramid.Hint
+  id: Hint
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: Hint()
+  nameWithType: Pyramid.Hint()
+  fullName: Solitaire.Pyramid.Hint()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: Hint
+    path: Solitaire/Pyramid.cs
+    startLine: 68
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод, предлагает какой ход можно сделать
+  example: []
+  syntax:
+    content: public void Hint()
+    content.vb: Public Sub Hint()
+  overload: Solitaire.Pyramid.Hint*
+- uid: Solitaire.Pyramid.CardMatch
+  commentId: M:Solitaire.Pyramid.CardMatch
+  id: CardMatch
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: CardMatch()
+  nameWithType: Pyramid.CardMatch()
+  fullName: Solitaire.Pyramid.CardMatch()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: CardMatch
+    path: Solitaire/Pyramid.cs
+    startLine: 81
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод, проверяет возможно ли совершить ход.
+  remarks: Cумма достоинств карт должна быть равна 13
+  example: []
+  syntax:
+    content: public void CardMatch()
+    content.vb: Public Sub CardMatch()
+  overload: Solitaire.Pyramid.CardMatch*
+- uid: Solitaire.Pyramid.CardBlock
+  commentId: M:Solitaire.Pyramid.CardBlock
+  id: CardBlock
+  parent: Solitaire.Pyramid
+  langs:
+  - csharp
+  - vb
+  name: CardBlock()
+  nameWithType: Pyramid.CardBlock()
+  fullName: Solitaire.Pyramid.CardBlock()
+  type: Method
+  source:
+    remote:
+      path: program/Solitaire/Pyramid.cs
+      branch: main
+      repo: https://github.com/r3miz0ff/SolitaireOnline
+    id: CardBlock
+    path: Solitaire/Pyramid.cs
+    startLine: 91
+  assemblies:
+  - Solitaire
+  namespace: Solitaire
+  summary: Этот метод устанавливает свойство <xref href="Solitaire.Card.bloked" data-throw-if-not-resolved="false"></xref> = true.
+  remarks: Используется, если карту сверху перекрывает другая карта
+  example: []
+  syntax:
+    content: public void CardBlock()
+    content.vb: Public Sub CardBlock()
+  overload: Solitaire.Pyramid.CardBlock*
+references:
+- uid: Solitaire.Solitaire
+  commentId: T:Solitaire.Solitaire
+  parent: Solitaire
+  href: Solitaire.Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire.Solitaire
+- uid: Solitaire
+  commentId: N:Solitaire
+  href: Solitaire.html
+  name: Solitaire
+  nameWithType: Solitaire
+  fullName: Solitaire
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Solitaire.Solitaire.deck
+  commentId: P:Solitaire.Solitaire.deck
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_deck
+  name: deck
+  nameWithType: Solitaire.deck
+  fullName: Solitaire.Solitaire.deck
+- uid: Solitaire.Solitaire.field
+  commentId: P:Solitaire.Solitaire.field
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_field
+  name: field
+  nameWithType: Solitaire.field
+  fullName: Solitaire.Solitaire.field
+- uid: Solitaire.Solitaire.timer
+  commentId: F:Solitaire.Solitaire.timer
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_timer
+  name: timer
+  nameWithType: Solitaire.timer
+  fullName: Solitaire.Solitaire.timer
+- uid: Solitaire.Solitaire.score
+  commentId: F:Solitaire.Solitaire.score
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_score
+  name: score
+  nameWithType: Solitaire.score
+  fullName: Solitaire.Solitaire.score
+- uid: Solitaire.Solitaire.move
+  commentId: F:Solitaire.Solitaire.move
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_move
+  name: move
+  nameWithType: Solitaire.move
+  fullName: Solitaire.Solitaire.move
+- uid: Solitaire.Solitaire.Sort
+  commentId: M:Solitaire.Solitaire.Sort
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_Sort
+  name: Sort()
+  nameWithType: Solitaire.Sort()
+  fullName: Solitaire.Solitaire.Sort()
+  spec.csharp:
+  - uid: Solitaire.Solitaire.Sort
+    name: Sort
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_Sort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Solitaire.Sort
+    name: Sort
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_Sort
+  - name: (
+  - name: )
+- uid: Solitaire.Solitaire.Draw
+  commentId: M:Solitaire.Solitaire.Draw
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_Draw
+  name: Draw()
+  nameWithType: Solitaire.Draw()
+  fullName: Solitaire.Solitaire.Draw()
+  spec.csharp:
+  - uid: Solitaire.Solitaire.Draw
+    name: Draw
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_Draw
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Solitaire.Draw
+    name: Draw
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_Draw
+  - name: (
+  - name: )
+- uid: Solitaire.Solitaire.GetScorePoints
+  commentId: M:Solitaire.Solitaire.GetScorePoints
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetScorePoints
+  name: GetScorePoints()
+  nameWithType: Solitaire.GetScorePoints()
+  fullName: Solitaire.Solitaire.GetScorePoints()
+  spec.csharp:
+  - uid: Solitaire.Solitaire.GetScorePoints
+    name: GetScorePoints
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetScorePoints
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Solitaire.GetScorePoints
+    name: GetScorePoints
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetScorePoints
+  - name: (
+  - name: )
+- uid: Solitaire.Solitaire.GetGameTime
+  commentId: M:Solitaire.Solitaire.GetGameTime
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetGameTime
+  name: GetGameTime()
+  nameWithType: Solitaire.GetGameTime()
+  fullName: Solitaire.Solitaire.GetGameTime()
+  spec.csharp:
+  - uid: Solitaire.Solitaire.GetGameTime
+    name: GetGameTime
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetGameTime
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Solitaire.GetGameTime
+    name: GetGameTime
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetGameTime
+  - name: (
+  - name: )
+- uid: Solitaire.Solitaire.GetMoveCount
+  commentId: M:Solitaire.Solitaire.GetMoveCount
+  parent: Solitaire.Solitaire
+  href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetMoveCount
+  name: GetMoveCount()
+  nameWithType: Solitaire.GetMoveCount()
+  fullName: Solitaire.Solitaire.GetMoveCount()
+  spec.csharp:
+  - uid: Solitaire.Solitaire.GetMoveCount
+    name: GetMoveCount
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetMoveCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Solitaire.GetMoveCount
+    name: GetMoveCount
+    href: Solitaire.Solitaire.html#Solitaire_Solitaire_GetMoveCount
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Solitaire.Pyramid.#ctor*
+  commentId: Overload:Solitaire.Pyramid.#ctor
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid__ctor
+  name: Pyramid
+  nameWithType: Pyramid.Pyramid
+  fullName: Solitaire.Pyramid.Pyramid
+  nameWithType.vb: Pyramid.New
+  fullName.vb: Solitaire.Pyramid.New
+  name.vb: New
+- uid: Solitaire.Pyramid.FillField*
+  commentId: Overload:Solitaire.Pyramid.FillField
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_FillField
+  name: FillField
+  nameWithType: Pyramid.FillField
+  fullName: Solitaire.Pyramid.FillField
+- uid: Solitaire.Pyramid.CardMatch
+  commentId: M:Solitaire.Pyramid.CardMatch
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_CardMatch
+  name: CardMatch()
+  nameWithType: Pyramid.CardMatch()
+  fullName: Solitaire.Pyramid.CardMatch()
+  spec.csharp:
+  - uid: Solitaire.Pyramid.CardMatch
+    name: CardMatch
+    href: Solitaire.Pyramid.html#Solitaire_Pyramid_CardMatch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Pyramid.CardMatch
+    name: CardMatch
+    href: Solitaire.Pyramid.html#Solitaire_Pyramid_CardMatch
+  - name: (
+  - name: )
+- uid: Solitaire.Pyramid.Move*
+  commentId: Overload:Solitaire.Pyramid.Move
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_Move
+  name: Move
+  nameWithType: Pyramid.Move
+  fullName: Solitaire.Pyramid.Move
+- uid: Solitaire.Pyramid.Move
+  commentId: M:Solitaire.Pyramid.Move
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_Move
+  name: Move()
+  nameWithType: Pyramid.Move()
+  fullName: Solitaire.Pyramid.Move()
+  spec.csharp:
+  - uid: Solitaire.Pyramid.Move
+    name: Move
+    href: Solitaire.Pyramid.html#Solitaire_Pyramid_Move
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Solitaire.Pyramid.Move
+    name: Move
+    href: Solitaire.Pyramid.html#Solitaire_Pyramid_Move
+  - name: (
+  - name: )
+- uid: Solitaire.Pyramid.MoveCancel*
+  commentId: Overload:Solitaire.Pyramid.MoveCancel
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_MoveCancel
+  name: MoveCancel
+  nameWithType: Pyramid.MoveCancel
+  fullName: Solitaire.Pyramid.MoveCancel
+- uid: Solitaire.Pyramid.MoveCheck*
+  commentId: Overload:Solitaire.Pyramid.MoveCheck
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_MoveCheck
+  name: MoveCheck
+  nameWithType: Pyramid.MoveCheck
+  fullName: Solitaire.Pyramid.MoveCheck
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Solitaire.Pyramid.Solve*
+  commentId: Overload:Solitaire.Pyramid.Solve
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_Solve
+  name: Solve
+  nameWithType: Pyramid.Solve
+  fullName: Solitaire.Pyramid.Solve
+- uid: Solitaire.Pyramid.Hint*
+  commentId: Overload:Solitaire.Pyramid.Hint
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_Hint
+  name: Hint
+  nameWithType: Pyramid.Hint
+  fullName: Solitaire.Pyramid.Hint
+- uid: Solitaire.Pyramid.CardMatch*
+  commentId: Overload:Solitaire.Pyramid.CardMatch
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_CardMatch
+  name: CardMatch
+  nameWithType: Pyramid.CardMatch
+  fullName: Solitaire.Pyramid.CardMatch
+- uid: Solitaire.Card.bloked
+  commentId: P:Solitaire.Card.bloked
+  href: Solitaire.Card.html#Solitaire_Card_bloked
+  name: bloked
+  nameWithType: Card.bloked
+  fullName: Solitaire.Card.bloked
+- uid: Solitaire.Pyramid.CardBlock*
+  commentId: Overload:Solitaire.Pyramid.CardBlock
+  href: Solitaire.Pyramid.html#Solitaire_Pyramid_CardBlock
+  name: CardBlock
+  nameWithType: Pyramid.CardBlock
+  fullName: Solitaire.Pyramid.CardBlock

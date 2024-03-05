@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Solitaire.Enums
+  commentId: N:Solitaire.Enums
+  id: Solitaire.Enums
+  children:
+  - Solitaire.Enums.CardSuitEnum
+  - Solitaire.Enums.CardValueEnum
+  langs:
+  - csharp
+  - vb
+  name: Solitaire.Enums
+  nameWithType: Solitaire.Enums
+  fullName: Solitaire.Enums
+  type: Namespace
+  assemblies:
+  - Solitaire
+references:
+- uid: Solitaire.Enums.CardSuitEnum
+  commentId: T:Solitaire.Enums.CardSuitEnum
+  parent: Solitaire.Enums
+  href: Solitaire.Enums.CardSuitEnum.html
+  name: CardSuitEnum
+  nameWithType: CardSuitEnum
+  fullName: Solitaire.Enums.CardSuitEnum
+- uid: Solitaire.Enums.CardValueEnum
+  commentId: T:Solitaire.Enums.CardValueEnum
+  parent: Solitaire.Enums
+  href: Solitaire.Enums.CardValueEnum.html
+  name: CardValueEnum
+  nameWithType: CardValueEnum
+  fullName: Solitaire.Enums.CardValueEnum
+- uid: Solitaire.Enums
+  commentId: N:Solitaire.Enums
+  href: Solitaire.html
+  name: Solitaire.Enums
+  nameWithType: Solitaire.Enums
+  fullName: Solitaire.Enums
+  spec.csharp:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html
+  spec.vb:
+  - uid: Solitaire
+    name: Solitaire
+    href: Solitaire.html
+  - name: .
+  - uid: Solitaire.Enums
+    name: Enums
+    href: Solitaire.Enums.html

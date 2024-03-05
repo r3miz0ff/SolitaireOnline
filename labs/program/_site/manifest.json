@@ -1,0 +1,330 @@
+{
+  "source_base_path": "C:/Users/vsevo/source/repos/r3miz0ff/SolitaireOnline/program",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SolitaireClient/wwwroot/lib/jquery-validation/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SolitaireClient/wwwroot/lib/jquery-validation/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Card.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Enums.CardSuitEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Enums.CardSuitEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Enums.CardValueEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Enums.CardValueEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Klondike.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Klondike.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Pyramid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Pyramid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Solitaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Solitaire.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.Spider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.Spider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Solitaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Solitaire.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Animations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Animations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.DailyTasksModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.DailyTasksModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.GameModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.GameModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.MenuModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.MenuModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.RatingsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.RatingsModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.ResultsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.ResultsModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.RulesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.RulesModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.SettingsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.SettingsModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.StatisticsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.StatisticsModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.Pages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireDB.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireDB.Account.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireDB.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireDB.Database.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SolitaireDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SolitaireDB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docks/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docks/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docks/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docks/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docks/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docks/toc.html"
+        },
+        ".json": {
+          "relative_path": "docks/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
